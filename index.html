@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+
+    <table  border="1">
+        <tr>
+            <td>Código</td>
+            <td>Nome do Produto</td>
+            <td> Valor R$</td>
+ 
+        </th>
+       <tbody id="produtos"></tbody>
+    </table>
+    <script>
+        let linha = ''
+        ler produtos = [
+            {codigo: 1, descricao: 'Feijão Carioca 1kg', preco:4.99},
+             {codigo:2, descricao:'Sardinha 88 150g'preco:6.99}
+        ]
+        produtos.push(codigo:3,descricao: ´Pacote de Macarrão Estrela´, preco: 2.59)}
+        
+         
+       produtos.forEach(produto => linha +=`
+       <tr> 
+         <td>${produto.codigo}</td>
+         <td>${produto.descricao}</td>
+         <td>R$ ${produto.preco.toFixed(2)}</ted>
+            </tr>
+            
+            
+            
+            ` )
+            document.getElementById('produto').innerHTML = linha
+
+     </script>
+     </body>
+     </html>         
+
