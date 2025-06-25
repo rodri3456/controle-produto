@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Cadastro de Clientes</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Controle de Clientes</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link" href="index.html">Produtos</a></li>
+          <li class="nav-item"><a class="nav-link" href="categorias.html">Categorias</a></li>
+          <li class="nav-item"><a class="nav-link active" href="clientes.html">Clientes</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container mt-4">
+    <h1>Cadastro de Clientes</h1>
+
+    <div class="row g-3 mb-3">
+      <div class="col-md-6">
+        <input
+          type="text"
+          id="nomeCliente"
+          class="form-control"
+          placeholder="Nome Completo"
+        />
+      </div>
+      <div class="col-md-6">
+        <input
+          type="email"
+          id="emailCliente"
+          class="form-control"
+          placeholder="Email"
+        />
+      </div>
+      <div class="col-md-6">
+        <input
+          type="tel"
+          id="telefoneCliente"
+          class="form-control"
+          placeholder="Telefone"
+        />
+      </div>
+      <div class="col-md-6">
+        <input
+          type="date"
+          id="nascimentoCliente"
+          class="form-control"
+          max=""
+          placeholder="Data de Nascimento"
+        />
+      </div>
+      <div class="col-md-12 d-grid">
+        <button id="btnSalvar" class="btn btn-primary">Cadastrar Cliente</button>
+        <button id="btnCancelar" class="btn btn-secondary mt-2" style="display:none;">Cancelar Edição</button>
+      </div>
+    </div>
+
+    <table class="table table-striped table-dark">
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Nome Completo</th>
+          <th>Email</th>
+          <th>Telefone</th>
+          <th>Data de Nascimento</th>
+          <th>Opções</th>
+        </tr>
+      </thead>
+      <tbody id="clientesTabela"></tbody>
+    </table>
+  </div>
+
+  <script src="clientes.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
